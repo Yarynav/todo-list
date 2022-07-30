@@ -10,31 +10,49 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Quattrocento+Sans:ital,wght@1,700&family=Quicksand&family=Raleway:wght@600&family=Roboto+Flex:opsz@8..144&family=Roboto:wght@300&family=Work+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="shortcut icon"
+      href="assets/img/javascript.webp"
+      type="favicon"
+    />
     <link rel="stylesheet" href="assets/style/style.css" />
     <title>Todo Listt</title>
   </head>
   <body>
     <div class="container">
-      <h1>Todo List</h1>
-      <span>Nueva Tarea</span>
+      <div class="titulo">
+        <h1>Todo List</h1>
+        <span>Nueva Tarea</span>
+      </div>
+      <div class="agregar">
+        <input id="thingsToDo" />
+        <button id="add">Agregar</button>
+      </div>
 
-      <input id="thingsToDo" />
-      <button id="add">Agregar</button>
-      <div>Tarea :</div>
-      <div id="amountTask">3</div>
-      <div>Resultado :</div>
-      <div id="done">0</div>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Tarea</th>
-            <th></th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody id="task"></tbody>
-      </table>
+      <div class="box-contador">
+        <div class="contador">
+          <div class="box-tarea">
+            <div>Tarea :</div>
+            <div id="amountTask">3</div>
+          </div>
+          <div class="box-tarea">
+            <div>Resultado :</div>
+            <div id="done">0</div>
+          </div>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Tarea</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="task"></tbody>
+        </table>
+      </div>
     </div>
     <script src="assets/js/index.js"></script>
   </body>
