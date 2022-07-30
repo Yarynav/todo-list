@@ -14,7 +14,7 @@ const tr = (e, i) => {
   <td>${i + 1}</td>
   <td>${e.nombre}</td>
   <td><input type="checkbox" id="check${i}" class="checks" onclick="filterInput(${i})" ></td>
-  <td><button id="${i}" class="btn-delete" onclick="delete_task(${i})">x</button></td>
+  <td><div><button id="${i}" class="btn-delete" onclick="delete_task(${i})">x</button></div></td>
 </tr>
 `;
   return trs;
